@@ -31,16 +31,46 @@ const Footer = () => {
         </div>
         <div className="socialIcons">
           <span className="icon">
-            <FaFacebookF />
+            <a
+              className="textnon textlight"
+              target="_blank"
+              href="https://www.facebook.com/hesham.aref.980?mibextid=ZbWKwL"
+            >
+              <FaFacebookF />
+            </a>
           </span>
-          <span className="icon">
+          {/* <span className="icon">
             <FaInstagram />
-          </span>
-          <span className="icon">
+          </span> */}
+          {/* <span className="icon">
             <FaTwitter />
+          </span> */}
+          <span className="icon">
+            <a
+              className="textnon textlight"
+              target="_blank"
+              href="https://x.com/HeshamAref91825?t=X00ar6G6hl2th3L0VfV81g&s=08 "
+            >
+              <FaTwitter />
+            </a>
           </span>
           <span className="icon">
-            <FaLinkedin />
+            <a
+              className="textnon textlight"
+              target="_blank"
+              href="https://instagram.com/hesham.aref.980?igshid=OGQ5ZDc2ODk2ZA=="
+            >
+              <FaInstagram />
+            </a>
+          </span>
+          <span className="icon">
+            <a
+              className="textnon textlight"
+              target="_blank"
+              href="https://www.linkedin.com/in/hesham-aref-b14b53255"
+            >
+              <FaLinkedin />
+            </a>
           </span>
         </div>
         <p className="name">Eng.Hesham Aref</p>

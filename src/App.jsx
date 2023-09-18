@@ -7,6 +7,7 @@ import { getApiConfiguration, getGenres } from "./store/homeSlice";
 
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
+import About from "./components/about/About";
 import Home from "./pages/home/Home";
 import Details from "./pages/details/Details";
 import SearchResult from "./pages/searchResult/SearchResult";
@@ -39,7 +40,7 @@ function App() {
 
   const genresCall = async () => {
     let promises = [];
-    let endPoints = ["tv", "movie"];
+    let endPoints = ["tv", "movie", "about"];
     let allGenres = {};
 
     endPoints.forEach((url) => {
@@ -60,6 +61,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/:mediaType/:id" element={<Details />} />
         <Route path="/search/:query" element={<SearchResult />} />
         <Route path="/explore/:mediaType" element={<Explore />} />
